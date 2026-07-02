@@ -1,0 +1,86 @@
+/* 🌌 FUNDO GERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #070b1a;
+  color: white;
+}
+
+/* 🎬 BANNER */
+.banner {
+  height: 60vh;
+  background: linear-gradient(135deg, #0b1a3a, #050816);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  opacity: 0.8;
+}
+
+/* 💼 CONTAINER DOS CARDS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* 🧱 CARD */
+.card {
+  background: #0d1430;
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+  /* ✨ animação inicial */
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease;
+}
+
+/* 📸 IMAGEM */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 📝 TEXTO */
+.card h3 {
+  margin: 10px;
+}
+
+.card p {
+  margin: 10px;
+  opacity: 0.8;
+}
+
+/* ✨ HOVER */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* 💙 FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* 🎬 classe ativada pelo JS */
+.card.show {
+  opacity: 1;
+  transform: translateX(0);
+}
